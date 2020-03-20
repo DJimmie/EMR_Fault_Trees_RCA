@@ -1,0 +1,28 @@
+@startuml
+left to right direction
+skinparam packageStyle rectangle
+
+rectangle RCA {
+
+(Add Target/Source)
+(Request RCA Tree)
+
+}
+
+actor Maintenance << Human >>
+actor SG << Human >>
+actor Systems << Human >>
+actor SQLite <<Database>>
+
+Systems <|-- Maintenance
+Systems <|-- SG
+
+
+
+Systems --> (Add Target/Source)
+Systems --> (Request RCA Tree)
+
+(Request RCA Tree) <-- SQLite 
+
+
+@enduml
