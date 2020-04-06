@@ -14,10 +14,8 @@ actor SG << Human >>
 actor Systems << Human >>
 actor SQLite <<Database>>
 
-Systems <|-- Maintenance
+Systems <|-- Systems
 Systems <|-- SG
-
-
 
 Systems --> (Add Target/Source)
 Systems --> (Request RCA Tree)
