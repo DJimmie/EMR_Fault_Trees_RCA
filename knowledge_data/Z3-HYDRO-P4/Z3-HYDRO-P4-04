@@ -1,0 +1,20 @@
+// What goes here
+digraph learn_1 {
+	graph [landscape=False rankdir=TB size="20,16" splines=polyline]
+	node [color=blue fillcolor=None shape=ellipse style=filled]
+	edge [arrowsize=1 fontcolor=red fontsize=8 headport=c labelangle=45 labeldistance=2.0 labelfontsize=6]
+	"Z3-HYDRO-P4" -> "Pump Not Running" [label="failure mode"]
+	"Pump Not Running" -> "Low Shop Air Press" [label="check compressor"]
+	"Pump Not Running" -> "exhaust muffler" [label="air escape"]
+	"Pump Not Running" -> "spool valve housing" [label="air escape"]
+	"Pump Not Running" -> "pilot valve vent" [label="air escape"]
+	"Pump Not Running" -> "Z3-SV-P4 Fail" [label="PPC Air Inlet"]
+	"Low Shop Air Press" -> "Air supply leak" [label="Corrective Action"]
+	"Low Shop Air Press" -> "Compressor Fail" [label="check compressor"]
+	"exhaust muffler" -> "ASL Maintenance Manual" [label="Corrective Action"]
+	"spool valve housing" -> "ASL Maintenance Manual" [label="Corrective Action"]
+	"pilot valve vent" -> "ASL Maintenance Manual" [label="Corrective Action"]
+	"Z3-SV-P4 Fail" -> "Component EOL" [label="Root Cause"]
+	"Component EOL" -> "Remove/Replace" [label="Corrective Action"]
+	"Z3-HYDRO-P4" [shape=box]
+}

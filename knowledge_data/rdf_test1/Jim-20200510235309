@@ -1,0 +1,10 @@
+// What goes here
+digraph learn_1 {
+	graph [landscape=False rankdir=TB size="20,16" splines=polyline]
+	node [color=blue fillcolor=None shape=ellipse style=filled]
+	edge [arrowsize=1 fontcolor=red fontsize=8 headport=c labelangle=45 labeldistance=2.0 labelfontsize=6]
+	Jim -> Human [label=IsA]
+	Jim -> Dog [label=hasPet]
+	Human -> Mammal [label=IsA]
+	Jim [shape=box]
+}

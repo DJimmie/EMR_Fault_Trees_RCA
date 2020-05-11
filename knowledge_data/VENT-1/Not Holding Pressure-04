@@ -1,0 +1,10 @@
+// What goes here
+digraph learn_1 {
+	graph [landscape=False rankdir=TB size="20,16" splines=polyline]
+	node [color=blue fillcolor=None shape=ellipse style=filled]
+	edge [arrowsize=1 fontcolor=red fontsize=8 headport=c labelangle=45 labeldistance=2.0 labelfontsize=6]
+	"Not Holding Pressure" -> "Worn Valve Seat" [label=cause]
+	"Not Holding Pressure" -> "Inadvertant ATO" [label=cause]
+	"Inadvertant ATO" -> "Air Solenoid Fail Open" [label=cause]
+	"Not Holding Pressure" [shape=box]
+}
