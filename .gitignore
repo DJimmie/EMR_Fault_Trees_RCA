@@ -123,3 +123,8 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# my repo files
+knowledge_data/
+root_cause_analysis (archive)/
+knowledge.db
