@@ -127,4 +127,5 @@ dmypy.json
 # my repo files
 knowledge_data/
 root_cause_analysis (archive)/
-knowledge.db
+
+# knowledge.db
